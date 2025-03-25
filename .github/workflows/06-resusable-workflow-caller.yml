@@ -11,14 +11,14 @@ on:
 
 jobs:
   call-workflow-A:
-    uses: deepaksharma2007/github-action-examples/.github/workflows/06-reusable-workflow-called.yml@main
+    uses: deepaksharma2007/github-action-examples/.github/workflows/06-reusable-workflow-called.yml@master
     with:
       username: deepak
     secrets:
       token: ${{ secrets.TOKEN }}
 
   call-workflow-B:
-    uses: deepaksharma2007/github-action-examples/.github/workflows/06-reusable-workflow-called.yml@main
+    uses: deepaksharma2007/github-action-examples/.github/workflows/06-reusable-workflow-called.yml@master
     with:
       username: Raj
     secrets:
